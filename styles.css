@@ -1,0 +1,302 @@
+:root {
+    --primary-color: #00b8d4;
+    --secondary-color: #0091a7;
+    --background-dark: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --victory-color: #4caf50;
+    --gold-color: #ffc107;
+    --gems-color: #9c27b0;
+    --essence-color: #4caf50;
+    --coat-color: #2196f3;
+    --medallion-color: #3f51b5;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.dashboard-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* User Profile Section */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar-container {
+    position: relative;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-info h4 {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.mode-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(0, 184, 212, 0.2);
+    color: var(--primary-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+
+.mode-badge i {
+    margin-right: 5px;
+}
+
+.progress-container {
+    margin-top: 5px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+}
+
+.progress {
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+.progress-percentage {
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+/* Stats Cards */
+.stats-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.stat-card {
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.pc-icon {
+    background-color: rgba(33, 150, 243, 0.2);
+    color: #2196f3;
+}
+
+.level-icon {
+    background-color: rgba(156, 39, 176, 0.2);
+    color: #9c27b0;
+}
+
+.battlepass-icon {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+}
+
+.item-icon {
+    background-color: rgba(0, 184, 212, 0.2);
+    color: var(--primary-color);
+}
+
+.stat-value {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.premium-icon {
+    font-size: 0.5rem;
+    color: #ffc107;
+    vertical-align: middle;
+}
+
+/* Match Information */
+.match-info-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.match-info-header i {
+    color: var(--primary-color);
+}
+
+.match-summary {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.match-description p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.match-stats {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.stage-label, .wave-label, .location-label, .farm-label {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Match Results Table */
+.table {
+    background-color: transparent;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+.table thead th {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: none;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.table td {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.victory-badge {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: var(--victory-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.reward-badge {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.gold-badge {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: var(--gold-color);
+}
+
+.gems-badge {
+    background-color: rgba(156, 39, 176, 0.2);
+    color: var(--gems-color);
+}
+
+.essence-badge {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: var(--essence-color);
+}
+
+.coat-badge {
+    background-color: rgba(33, 150, 243, 0.2);
+    color: var(--coat-color);
+}
+
+.medallion-badge {
+    background-color: rgba(63, 81, 181, 0.2);
+    color: var(--medallion-color);
+}
+
+.time-icon, .date-icon {
+    margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .user-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .stats-container {
+        margin-top: 20px;
+    }
+    
+    .match-stats {
+        text-align: left;
+        margin-top: 15px;
+    }
+    
+    .stat-card {
+        margin-bottom: 10px;
+    }
+}
